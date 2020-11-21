@@ -21,7 +21,8 @@ ReactDOM.render(
         <Router>
           <Switch>
             <Route exact path="/" component={App} />
-            <Route component={NotFound} />
+            <Route path="/404" component={NotFound} />
+            <Route component={App} />
           </Switch>
         </Router>
       </ThemeProvider>
