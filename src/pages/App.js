@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import {
   Typography,
-  CircularProgress
+  CircularProgress,
+  Link,
 } from '@material-ui/core'
 
 import Layout from '../components/Layout'
@@ -39,7 +40,7 @@ const App = () => {
             </Typography>
 
             <Typography variant="h6" align="center" color="textPrimary">
-              Powered by Imgflip: https://imgflip.com/
+              Powered by <Link href="https://imgflip.com/" target="_blank" rel="noreferrer" color="primary">Imgflip</Link>
             </Typography>
 
             <MemeForm onSubmit={generateMeme} />

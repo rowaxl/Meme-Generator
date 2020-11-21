@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   const styles = useStyles()
 
   return (
-    <Container className={styles.container}>
+    <Container maxWidth={false} className={styles.container}>
       {children}
     </Container>
   )
